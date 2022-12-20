@@ -26,7 +26,7 @@ describe('multiply', () => {
   });
 });
 
-describe('includesCopy', () => {
+describe.only('includesCopy', () => {
   it('is a function', () => {
     expect(typeof includesCopy).to.equal('function');
   });
@@ -47,7 +47,7 @@ describe('includesCopy', () => {
   });
 });
 
-describe('camelCase', () => {
+describe.only('camelCase', () => {
   it('is a function', () => {
     expect(typeof camelCase).to.equal('function');
   });
@@ -58,7 +58,7 @@ describe('camelCase', () => {
   });
 
   it('returns the camelCased version of input string', () => {
-    const returnedValue = camelCase('how now brown cow');
+    const returnedValue = camelCase('how now brown cow');    
     expect(returnedValue).to.equal('howNowBrownCow');
   });
 
